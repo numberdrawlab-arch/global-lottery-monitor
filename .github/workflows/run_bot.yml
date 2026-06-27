@@ -1,0 +1,39 @@
+name: Live Lottery Monitor
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' 
+  workflow_dispatch:      
+
+permissions:
+  contents: write         
+
+jobs:
+  check-results:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install Dependencies
+      run: pip install pandas beautifulsoup4 requests
+
+    - name: Execute Check
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      run: python bot.py
+
+    - name: Commit State Changes
+      run: |
+        git config --global user.name 'LotteryBot'
+        git config --global user.email 'bot@github.com'
+        if [ -f lottery_state_tracker.json ]; then
+          git add lottery_state_tracker.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update state tracking signatures" && git push)
+        fi
