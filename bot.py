@@ -38,7 +38,7 @@ def send_notification(lottery_name, region, url):
         f"🚨 **NEW LOTTERY RESULT DETECTED** 🚨\n\n"
         f"🏆 **Lottery:** {lottery_name}\n"
         f"🌍 **Region:** {region}\n"
-        f"ℹ️ **Status:** New winning array or draw sheet published!\n\n"
+        f"ℹ️ **Status:** New winning array, PDF sheet, or asset link published!\n\n"
         f"🔗 **Direct Link:** {url}"
     )
     if TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID:
@@ -92,13 +92,22 @@ def monitor_lotteries():
             for tag in soup(["script", "style", "nav", "footer", "iframe", "noscript", "header", "aside"]):
                 tag.decompose()
                 
-            # 4. Universal Text Normalization Strategy
-            # Strips tracking tokens, relative session IDs, and whitespace anomalies
+            # 4. Universal Text & Asset Normalization Strategy
+            # Captures pure text layout elements
             core_text = soup.get_text()
             words = [word.strip() for word in core_text.split() if len(word.strip()) > 0]
-            clean_text = " ".join(words)
+            pure_text = " ".join(words)
             
-            page_hash = hashlib.sha256(clean_text.encode('utf-8')).hexdigest()
+            # Extract URLs of all PDFs and images (Crucial for Asian/African lotteries publishing image/PDF results)
+            asset_urls = []
+            for link in soup.find_all(['a', 'img']):
+                href = link.get('href') or link.get('src') or ''
+                if any(ext in href.lower() for ext in ['.pdf', '.png', '.jpg', '.jpeg', '.gif']):
+                    asset_urls.append(href)
+            
+            # Combine text layout with static asset lists for a completely bulletproof fingerprint
+            combined_fingerprint = pure_text + " | Assets: " + " ".join(asset_urls)
+            page_hash = hashlib.sha256(combined_fingerprint.encode('utf-8')).hexdigest()
 
             if name not in current_state:
                 current_state[name] = page_hash
