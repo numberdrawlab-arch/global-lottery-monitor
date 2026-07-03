@@ -52,6 +52,7 @@ Supreme Ventures Limited,Jamaica,National,https://supremeventures.com/game-resul
 Japan Racing Association & Mizuho Bank,Japan,National,https://www.mizuhobank.co.jp/takarakuji/lotto/index.html
 Lutrija Kosova,Kosovo,National,http://www.lutrijakosoves.com/
 Latvijas Loto,Latvia,National,https://www.latloto.lv/
+Loterie Nationale de l'Albanie,Albania,National,https://www.loterianacionale.al/en/results
 Loterie Nationale du Liban,Lebanon,National,https://www.lebanon-lotto.com/results.php
 Olifant (National Lottery),Lesotho,National,https://www.lesotholotto.co.ls/
 Perlas (Olifantas),Lithuania,National,https://perlas.lt/
@@ -86,7 +87,10 @@ Državna Lutrija Srbije,Serbia,National,https://www.lutrija.rs/
 Singapore Pools,Singapore,National,https://www.singaporepools.com.sg/toto
 Tipos a.s.,Slovakia,National,https://www.tipos.sk/
 Loterija Slovenije,Slovenia,National,https://www.loterija.si/
-South African National Lottery (ITHUBA),South Africa,National,https://www.lottery.co.za/lotto/results
+South Africa National Lotto,South Africa,National,https://www.lottery.co.za/lotto/results
+South Africa Daily Lotto,South Africa,National,https://www.lottery.co.za/daily-lotto/results
+South Africa Powerball,South Africa,National,https://www.lottery.co.za/powerball/results
+South Africa Sportstake,South Africa,National,https://www.lottery.co.za/sportstake/results
 Nanum Lotto / Dongheng Lotto,South Korea,National,https://www.dhlottery.co.kr/
 Loterías y Apuestas del Estado,Spain,National,https://www.loteriasyapuestas.es/
 Sri Lanka National Lotteries Board,Sri Lanka,National,https://www.nlb.lk/
@@ -102,7 +106,7 @@ National Lottery (Camelot),United Kingdom,National,https://www.national-lottery.
 US Mega Millions,United States,National / Multi-State,https://www.lotteryusa.com/mega-millions/
 US Powerball,United States,National / Multi-State,https://www.lotteryusa.com/powerball/
 The Lott (Tattersalls / Golden Casket),Australia,National Network,https://www.thelott.com/results
-Lotería Nacional de Beneficencia,Uruguay,National,https://www.loteria.com.uy/
+Lotería Nacional de Beneficencia,Uruguay,National,https://www.loteria.com.py/
 Kish National Lottery,Iran,National,https://www.kishlotto.com/
 Lotería de Caracas,Venezuela,National,http://www.loteriadecaracas.gob.ve/
 Vietlott,Vietnam,National,https://www.vietlott.vn/
@@ -124,6 +128,9 @@ New South Wales Lotteries,Australia (NSW),State,https://www.thelott.com/nswlotte
 Queensland Lotteries (Golden Casket),Australia (QLD),State,https://www.thelott.com/goldencasket/results
 South Australian Lotteries (SA Lotteries),Australia (SA),State,https://www.thelott.com/salotteries/results
 Tattersalls,Australia (VIC/TAS/NT),State,https://www.thelott.com/tattersalls/results
+Kerala State Lotteries,India (Kerala),State,https://www.keralalotteries.net/
+Sikkim State Lotteries,India (Sikkim),State,https://www.sikkimlotteries.com/
+Dear Lottery Sambad,India (Nagaland/Mizoram),State,https://www.lotterysambad.com/
 Arizona Lottery,United States (Arizona),State,https://www.lotteryusa.com/arizona/
 Arkansas Scholarship Lottery,United States (Arkansas),State,https://www.lotteryusa.com/arkansas/
 California State Lottery,United States (California),State,https://www.lotteryusa.com/california/
@@ -166,7 +173,7 @@ Vermont Lottery,United States (Vermont),State,https://vtlottery.com/games/powerb
 Virginia Lottery,United States (Virginia),State,https://www.lotteryusa.com/virginia/
 Washington's Lottery,United States (Washington),State,https://www.lotteryusa.com/washington/
 West Virginia Lottery,United States (West Virginia),State,https://www.lotteryusa.com/west-virginia/
-Wisconsin Lottery,United States (Wisconsin),State,https://www.lotteryusa.com/wisconsin/
+Wisconsin Lottery,United States (Wisconsin),State,https://www.lotteryusa.com/Wisconsin/
 Wyoming Lottery (WyoLotto),United States (Wyoming),State,https://www.lotteryusa.com/wyoming/
 Macau Slot & Lottery Networks,Macau,Territorial,https://www.macau-slot.com/slot/pages/results
 Guernsey Lottery,United Kingdom (Guernsey),Territorial,https://www.gov.gg/lotteryresults
@@ -175,6 +182,3 @@ Jersey Lottery,United Kingdom (Jersey),Territorial,https://www.gov.je/lotteryres
 Lotería de Puerto Rico,United States (Puerto Rico),Territorial,https://www.loteria.pr.gov/resultados-powerball
 Virgin Islands Lottery,United States (US Virgin Islands),Territorial,https://www.vilottery.vi/winning-numbers
 District of Columbia Lottery,United States (Washington D.C.),Territorial,https://www.lotteryusa.com/washington-dc/
-Kerala State Lotteries,India (Kerala),State,https://www.keralalotteries.net/
-Sikkim State Lotteries,India (Sikkim),State,https://www.sikkimlotteries.com/
-Sambad Lottery,India (Dear),State,https://www.lotterysambad.com/
