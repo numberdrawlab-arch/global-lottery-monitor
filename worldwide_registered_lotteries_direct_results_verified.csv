@@ -36,7 +36,7 @@ Veikkaus Oy,Finland,National,https://www.veikkaus.fi/fi/tulokset
 Française des Jeux (FDJ),France,National,https://www.fdj.fr/jeux-de-tirage/loto/resultats
 Deutscher Lotto- und Totoblock (DLTB),Germany,National,https://www.lotto.de/lotto-6aus49/ergebnisse
 National Lottery (Ghana),Ghana,National,https://nla.com.gh/
-OPAP S.A.,Greece,National,https://www.opap.gr/lotto-past-draws
+OPAP S.A.,Greece,National,https://api.opap.gr/draws/v3.0/5104/last-result-and-active
 Lotería Nacional de Guatemala,Guatemala,National,https://www.loterianacional.com.gt/
 Loterie Nationale d'Haïti,Haiti,National,https://loterienationale.gouv.ht/
 Lotería Nacional de Honduras,Honduras,National,https://www.longeh.gob.hn/
@@ -67,7 +67,7 @@ Marocaine des Jeux et des Sports (MDJS),Morocco,National,https://www.mdjs.ma/
 Myanmar National Lottery (Aung Bar Lay),Myanmar,National,https://www.aungbarlay.gov.mm/
 Namibia National Lottery,Namibia,National,https://www.namibialottery.com.na/
 Nederlandse Loterij (Staatsloterij),Netherlands,National,https://staatsloterij.nederlandseloterij.nl/trekking-uitslagen
-Lotto New Zealand,New Zealand,National,https://mylotto.co.nz/results
+Lotto New Zealand,New Zealand,National,https://mylotto.co.nz/Results/bullseye//bullseye/
 Loterie Nationale du Niger,Niger,National,https://www.lonani.ne/
 Premier Lotto (Baba Ijebu),Nigeria,National,https://www.premierlottoman.com/
 Norsk Tipping,Norway,National,https://www.norsk-tipping.no/lotto/resultater
